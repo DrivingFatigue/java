@@ -40,3 +40,20 @@ Q6：switch多分支语句
          [break];
     }
     note:语句中表达式的值必须是整形、字符型、字符串型。
+
+Q7：格式化字符串
+   1.format(String format,Object...args)  
+   		eg. String.format("%te",new Date())
+   2.format(Local l,String format,Object...args) 
+   		note:如果l为null则不进行本地化
+
+Q8: String、StringBuffer与StringBuilder之间区别
+	1.String：字符串常量;StringBuffer：字符创变量;StringBuilder：字符创变量
+	2.三者在执行速度方面的比较：StringBuilder >  StringBuffer  >  String
+	3.StringBuilder与 StringBuffer
+		StringBuilder：线程非安全的
+　　　　 StringBuffer：线程安全的
+
+Q9: binarySearch
+	binarySearch(Object[].Object key)
+	note:必须在调用数组前进行排序（通过sort排序）
